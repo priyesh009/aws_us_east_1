@@ -12,4 +12,4 @@ Resources:
       MasterUsername: priyesh18
       MasterUserPassword: Priyesh18!
       NodeType: dc2.large
-      SnapshotIdentifier: !Ref SnapshotName
+      SnapshotIdentifier: redshift-cluster-1-restored-final-snapshot
