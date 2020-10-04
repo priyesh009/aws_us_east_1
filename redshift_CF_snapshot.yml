@@ -1,6 +1,6 @@
 Parameters:
   SnapshotName:
-    Description: Name of Redshift Cluster
+    Description: Name of Redshift Cluster is 
     Type: String
     Default: examplecluster
 Resources:
