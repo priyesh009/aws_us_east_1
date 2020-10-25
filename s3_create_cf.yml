@@ -1,0 +1,5 @@
+Resources:
+  S3Bkt:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: gitcftestbkt
