@@ -1,3 +1,4 @@
+#simple bucket
 Resources:
   S3Bkt:
     Type: 'AWS::S3::Bucket'
