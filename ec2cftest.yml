@@ -8,11 +8,11 @@ Parameters:
 Mappings:
   RegionMap:
     us-east-1:
-      "32":"ami-0947d2ba12ee1ff75"
-      "64":"ami-007a607c4abd192db"
+      "32": "ami-0947d2ba12ee1ff75"
+      "64": "ami-007a607c4abd192db"
     ap-south-1:
-      "32":"ami-0e306788ff2473ccb"
-      "64":"ami-001e484a60bb07f8d"
+      "32": "ami-0e306788ff2473ccb"
+      "64": "ami-001e484a60bb07f8d"
 
 Resources:
   MyInstance:
@@ -20,7 +20,7 @@ Resources:
     Properties:
       AvailabilityZone: us-east-1a
       #ImageId: ami-0947d2ba12ee1ff75
-      ImageId:!FindInMap [RegionMap, !Ref "AWS::Region",32]
+      ImageId: !FindInMap [RegionMap, !Ref "AWS::Region",32]
       InstanceType: t2.micro
       SecurityGroups:
         - !Ref SSHSecurityGroup
