@@ -1,0 +1,11 @@
+#simple bucket
+Parameters:
+  bktname:
+    Description: Name of Redshift Cluster is 
+    Type: String
+    Default: gitcftestbkt
+Resources:
+  S3Bkt:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: !Ref bktname
