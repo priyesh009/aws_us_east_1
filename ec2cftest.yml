@@ -4,6 +4,10 @@ Parameters:
     Description: Security Group Description
     Type: String
     Default: Cool SG 
+  EnvironmentSet:
+    Description: select prd or dev
+    Type: string
+    Default: dev
 
 Mappings:
   RegionMap:
@@ -71,7 +75,18 @@ Resources:
         ToPort: 22
         CidrIp: 183.87.175.39/32
 
+Conditions:
+  EnvUsed: !Equals [!Ref EnvironmentSet, dev]
+  
+
 Outputs:
   AMIused:
-    Description: The AMI used is
+    Description: The AMI used is(here you will instance ID)
     Value: !Ref MyInstance
+  EvsType:
+    Description: you will prind this only if evs is dev
+    Value: Bhai tu dev me hai
+    Condition: EnvUsed
+  
+
+
