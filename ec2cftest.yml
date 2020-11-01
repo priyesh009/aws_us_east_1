@@ -3,6 +3,7 @@ Parameters:
   SecurityGroupDescription:
     Description: Security Group Description
     Type: String
+    Default: Cool SG 
 
 Resources:
   MyInstance:
