@@ -6,7 +6,7 @@ Parameters:
     Default: Cool SG 
   EnvironmentSet:
     Description: select prd or dev
-    Type: string
+    Type: String
     Default: dev
 
 Mappings:
