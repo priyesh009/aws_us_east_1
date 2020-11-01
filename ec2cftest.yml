@@ -7,7 +7,7 @@ Parameters:
   EnvironmentSet:
     Description: select prd or dev
     Type: String
-    Default: dev
+    Default: prod
 
 Mappings:
   RegionMap:
