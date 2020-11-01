@@ -81,12 +81,18 @@ Conditions:
 
 Outputs:
   AMIused:
-    Description: The AMI used is(here you will instance ID)
+    Description: The AMI used is(here you will instance ID) using Ref you can get only the ID fro other you need to use GetAtt
     Value: !Ref MyInstance
   EvsType:
     Description: you will prind this only if evs is dev
     Value: Bhai tu dev me hai
     Condition: EnvUsed
+  DNSget:
+    Description: DNS is 
+    Value: !GetAtt MyInstance.PublicIp
+  TestingSUB:
+    Description: Sub a Region and a paramaters
+    Value: !Sub 'arn:aws:ec2:${AWS::Region}:${EnvironmentSet}'
   
 
 
